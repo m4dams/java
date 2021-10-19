@@ -1,5 +1,8 @@
 package com.company;
 
+import java.util.Collections;
+import java.util.stream.IntStream;
+
 public class Arrays {
 
     public static void main(String[] args) {
@@ -79,19 +82,30 @@ public class Arrays {
         orders[2] = temp;*/
 
         //MindenElemÖsszege
+        //A) Using loop
         /*int[] numbers = {3, 4, 5, 6, 7};
+
         int sum = 0;
         for (int i = 0; i < numbers.length; i++) {
             sum += numbers[i];
 
         }
         System.out.println(sum);*/
+        //B) Using Stream
+        /*int[] numbers = {3, 4, 5, 6, 7};
+        int sum = IntStream.of(numbers).sum();
+        System.out.println(sum);*/
+
+
 
         //Backwards
-        int[] numbers = {4, 5, 6, 7};
+        //Standard loop
+        /*int[] numbers = {4, 5, 6, 7};
+
         for (int i = numbers.length - 1; i >= 0; i--) {
             System.out.println(numbers[i]);
-        }
+        }*/
+
 
 
     }

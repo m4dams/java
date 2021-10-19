@@ -166,7 +166,7 @@ public class scannerInputAndConditionals {
 
     }
 
-    public static int subStringSearch(String input, String query) {
+     private static int subStringSearch(String input, String query) {
         if (input.contains(query)) {
             return input.indexOf(query);
         } else {

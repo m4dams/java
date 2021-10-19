@@ -13,6 +13,7 @@ class Sum {
         System.out.println(sumB(number));
 
     }
+
     //Loop style
     static int sumA(int input) {
         for (int i = input - 1; i > 0; i--) {
@@ -20,8 +21,11 @@ class Sum {
         }
         return input;
     }
+
     //Stream
-    static int sumB(int input){
-        return IntStream.rangeClosed(2, input).reduce(1, (x, y) -> x + y);
+    static int sumB(int input) {
+        return IntStream.rangeClosed(1, input).reduce(0, (x, y) -> x + y);
     }
-}
+
+
+    }

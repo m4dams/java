@@ -1,9 +1,8 @@
 <application>
   <component name="ActionMacroManager">
-    <macro name="ReformatBeforeSave">
-      <action id="$SelectAll" />
+    <macro name="ReformatAndSave">
       <action id="ReformatCode" />
-      <action id="SaveAll" />
+      <shortuct text="control S" />
     </macro>
   </component>
 </application>

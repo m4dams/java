@@ -5,7 +5,7 @@
     <keyboard-shortcut first-keystroke="ctrl y" />
   </action>
   <action id="EditorDeleteLine" />
-  <action id="Macro.ReformatBeforeSave">
+  <action id="Macro.ReformatAndSave">
     <keyboard-shortcut first-keystroke="ctrl s" />
   </action>
   <action id="SaveAll" />

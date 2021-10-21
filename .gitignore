@@ -1,0 +1,9 @@
+.idea/
+out/
+*.iml
+java_introduction_problems/java_introduction_problems.iml
+loops/loops.iml
+playingWithVariables/playingWithVariables.iml
+arrays/arrays.iml
+scannerInputAndConditionals/scannerInputAndConditionals.iml
+*.xml

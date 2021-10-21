@@ -13,8 +13,8 @@ class Factorio {
     }
 
     //Plain old loop style
-    static int factorioA(int input) {
-        int carrier = 1;
+    static long factorioA(int input) {
+        long carrier = 1;
         if (input != 0 && input > 0) {
             for (int i = 1; i <= input; i++) {
                 carrier *= i;
@@ -29,7 +29,7 @@ class Factorio {
     }
 
     //using Stream
-    static int factorioB(int input) {
+    static long factorioB(int input) {
         return IntStream.rangeClosed(2, input).reduce(1, (x, y) -> x * y);
     }
 }

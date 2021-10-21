@@ -147,7 +147,7 @@ public class loops {
         }*/
 
         //DrawSquareWithDiagonal
-        /*System.out.println("A program bekér egy egész számot majd kirajzol egy négyzetet átlóval.\n" +
+        System.out.println("A program bekér egy egész számot majd kirajzol egy négyzetet átlóval.\n" +
                 "Kérlek adj meg egy egész számot (ne legyen túl nagy...)");
         int rows = scanner.nextInt();
         for (int i = 1; i <= rows; i++) {
@@ -167,11 +167,11 @@ public class loops {
                 System.out.print("%");
             }
             System.out.println();
-        }*/
+        }
 
         //ParametricAverage
 
-        System.out.println("ez az izé bekér egy egész számot, majd utána bekér annyi számot,\n" +
+       /* System.out.println("ez az izé bekér egy egész számot, majd utána bekér annyi számot,\n" +
                 " mint ammenyit megadtál elsőnek. Aztán kidobja ezeknek összegét és átlagát");
         int cycle = scanner.nextInt();
         ArrayList numbers = new ArrayList();
@@ -181,7 +181,7 @@ public class loops {
             sum += (int) numbers.get(i);
         }
 
-        System.out.println("Összeg: " + sum + "\tÁtlag: " + (sum / numbers.size()));
+        System.out.println("Összeg: " + sum + "\tÁtlag: " + (sum / numbers.size()));*/
 
         //DrawChessTable
         /*for (int i = 1; i < 9; i++) {

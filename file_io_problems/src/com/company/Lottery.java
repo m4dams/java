@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
 
 //works...
 public class Lottery {
-    static final String LOTTERYPATTERN = "[0-9][0-9]?;[0-9][0-9]?;[0-9][0-9]?;[0-9][0-9]?;[0-9][0-9]?";
+    static final String LOTTERY_PATTERN = "[0-9][0-9]?;[0-9][0-9]?;[0-9][0-9]?;[0-9][0-9]?;[0-9][0-9]?";
 
     public static void main(String[] args) {
         try {
@@ -24,21 +24,18 @@ public class Lottery {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-
     }
 
     static void findFiveMostFrequent(List<String> listName) {
         List<String> numbersList = new ArrayList<>();
         for (String s : listName) {
 
-            Pattern pattern = Pattern.compile(LOTTERYPATTERN);
+            Pattern pattern = Pattern.compile(LOTTERY_PATTERN);
             Matcher matcher = pattern.matcher(s);
             while (matcher.find()) {
                 numbersList.addAll(Pattern.compile(";")
                         .splitAsStream(matcher.group())
                         .collect(Collectors.toList()));
-
             }
         }
 //        Collects elements and maps them to their frequency

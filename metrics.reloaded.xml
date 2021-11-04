@@ -1,6 +1,5 @@
 <application>
   <component name="MetricsReloaded">
-    <option name="showOnlyWarnings" value="true" />
     <layout>
       <profile name="Complexity metrics">
         <metrics_layout>

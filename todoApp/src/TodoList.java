@@ -35,7 +35,7 @@ public class TodoList {
     try {
       this.todos.remove(number - 1);
       saveToDos();
-    } catch (IndexOutOfBoundsException e){
+    } catch (IndexOutOfBoundsException e) {
       System.out.println("Unable to remove: index is out of bound");
       System.exit(0);
     }
@@ -46,13 +46,12 @@ public class TodoList {
     try {
       todos.get(number - 1).markDone();
       saveToDos();
-    } catch (IndexOutOfBoundsException e){
+    } catch (IndexOutOfBoundsException e) {
       System.out.println("Unable to check: index is out of bound");
       System.exit(0);
     }
 
   }
-
 
   @Override
   public String toString() {

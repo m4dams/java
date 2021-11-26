@@ -14,14 +14,14 @@ public class ToDo implements Serializable {
     this.isDone = isDone;
   }
 
-  public void markDone(){
-    this.isDone=!this.isDone;
+  public void markDone() {
+    this.isDone = !this.isDone;
   }
 
   @Override
   public String toString() {
     return String.format("[%s] %s",
-        this.isDone?"x":" ",
+        this.isDone ? "x" : " ",
         this.description);
   }
 

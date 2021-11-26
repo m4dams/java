@@ -17,7 +17,6 @@ public class FileHandler implements Serializable {
     this.filepath = filepath;
   }
 
-
   public static List<ToDo> loadToDos() {
     List<ToDo> toDos = new ArrayList<>();
     try {
@@ -30,18 +29,19 @@ public class FileHandler implements Serializable {
           if (toDo != null) {
             toDos.add(toDo);
           }
-        } catch (EOFException e){
+        } catch (EOFException e) {
           cont = false;
           objectInputStream.close();
           fileInputStream.close();
         }
-
       }
       return toDos;
     } catch (FileNotFoundException e) {
-      saveToDos(toDos);
       return toDos;
-    }catch (Exception e){return toDos;}
+    } catch (Exception e) {
+      e.printStackTrace();
+      return toDos;
+    }
   }
 
   public static void saveToDos(List<ToDo> todoList) {
@@ -58,7 +58,5 @@ public class FileHandler implements Serializable {
     } catch (IOException e) {
       e.printStackTrace();
     }
-
   }
-
 }

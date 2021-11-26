@@ -1,6 +1,6 @@
 public class Main {
   public static void main(String[] args) {
-executeOperations(args);
+    executeOperations(args);
 
   }
 
@@ -17,11 +17,11 @@ executeOperations(args);
           todoList.addToDo(args[1]);
           break;
         }
-        case "-r":{
+        case "-r": {
           todoList.removeToDo(Integer.parseInt(args[1]));
           break;
         }
-        case "-c":{
+        case "-c": {
           todoList.completeToDo(Integer.parseInt(args[1]));
           break;
         }

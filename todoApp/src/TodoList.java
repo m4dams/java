@@ -67,14 +67,15 @@ public class TodoList {
     }
   }
 
-  public List<ToDo> getToDos() {
+  public void getToDos() {
     List<ToDo> uncheckedToDos = new ArrayList<>();
     for (ToDo todo : this.todos) {
       if (!todo.isDone()) {
         uncheckedToDos.add(todo);
       }
     }
-    return uncheckedToDos;
+    this.todos.clear();
+    this.todos.addAll(uncheckedToDos);
   }
 }
 

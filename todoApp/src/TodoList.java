@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class TodoList {
@@ -65,4 +66,15 @@ public class TodoList {
       return stringBuilder.toString();
     }
   }
+
+  public List<ToDo> getToDos() {
+    List<ToDo> uncheckedToDos = new ArrayList<>();
+    for (ToDo todo : this.todos) {
+      if (!todo.isDone()) {
+        uncheckedToDos.add(todo);
+      }
+    }
+    return uncheckedToDos;
+  }
 }
+

@@ -4,11 +4,12 @@ import java.util.List;
 
 public class ErrorHandler {
   final List<String> validArguments= new ArrayList<>(Arrays.asList(
-      "-l", "-a","-r", "-c"));
+      "-l","-la", "-a","-r", "-c"));
   final String help="Command Line Todo application\n" +
       "=============================\n\n" +
       "Command line arguments:\n" +
-      "\t-l\tLists all the tasks\n" +
+      "\t-l\tLists undone tasks\n"+
+      "\t-la\tLists all the tasks\n"+
       "\t-a\tAdds a new task\n" +
       "\t-r\tRemoves an task\n" +
       "\t-c\tCompletes an task\n";
@@ -43,4 +44,5 @@ public class ErrorHandler {
       return true;
     }
   }
+
 }

@@ -28,4 +28,8 @@ public class ToDo implements Serializable {
   public String getDescription() {
     return description;
   }
+
+  public boolean isDone() {
+    return isDone;
+  }
 }

@@ -1,6 +1,6 @@
 public class Main {
   public static void main(String[] args) {
-    executeOperations(args);
+   executeOperations(args);
 
   }
 
@@ -9,10 +9,12 @@ public class Main {
     if (errorHandler.validate(args)) {
       TodoList todoList = new TodoList(new FileHandler("todo.txt"));
       switch (args[0]) {
-        case "-l": {
+        case "-la": {
           System.out.println(todoList);
           break;
         }
+        case "-l":
+          System.out.println(todoList.getToDos());
         case "-a": {
           todoList.addToDo(args[1]);
           break;

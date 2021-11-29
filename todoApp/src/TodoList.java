@@ -23,8 +23,10 @@ public class TodoList {
     return FileHandler.loadToDos();
   }
 
-  public void addToDo(String todo) {
-    this.todos.add(new ToDo(todo));
+  public void addToDo(String[] args) {
+    for (int i = 1; i < args.length; i++) {
+      this.todos.add(new ToDo(args[i]));
+    }
     saveToDos();
   }
 

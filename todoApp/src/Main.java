@@ -18,7 +18,7 @@ public class Main {
           System.out.println(todoList);
           break;
         case "-a": {
-          todoList.addToDo(args[1]);
+          todoList.addToDo(args);
           break;
         }
         case "-r": {

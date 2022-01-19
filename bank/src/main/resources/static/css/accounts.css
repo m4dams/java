@@ -1,0 +1,12 @@
+thead{
+    text-align: center;
+}
+
+
+
+.currency::before {
+content:'Zebra '
+}
+.currency::after{
+    content:'.00'
+}

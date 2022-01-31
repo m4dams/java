@@ -5,6 +5,12 @@
     <keyboard-shortcut first-keystroke="ctrl y" />
   </action>
   <action id="EditorDeleteLine" />
+  <action id="GotoImplementation">
+    <mouse-shortcut keystroke="control alt button1" />
+  </action>
+  <action id="GotoSymbol" />
+  <action id="Inline" />
+  <action id="IntroduceConstant" />
   <action id="Macro.ReformatAndSave">
     <keyboard-shortcut first-keystroke="ctrl s" />
   </action>

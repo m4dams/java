@@ -15,4 +15,5 @@
     <keyboard-shortcut first-keystroke="ctrl s" />
   </action>
   <action id="SaveAll" />
+  <action id="Synchronize" />
 </keymap>

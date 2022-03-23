@@ -11,6 +11,7 @@
   <action id="GotoSymbol" />
   <action id="Inline" />
   <action id="IntroduceConstant" />
+  <action id="IntroduceVariable" />
   <action id="Macro.ReformatAndSave">
     <keyboard-shortcut first-keystroke="ctrl s" />
   </action>
